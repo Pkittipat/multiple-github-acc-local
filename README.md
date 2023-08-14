@@ -30,7 +30,7 @@ Host github.com-accTwo
 	User git
 	IdentityFile ~/.ssh/accTwo
 ```
-note: Host github.com-accOne or github.com-accTwo is custom how aliases.
+note: Host github.com-accOne or github.com-accTwo is custom host aliases.
 
 ### Clone repo
 change the url repo.
