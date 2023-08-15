@@ -1,19 +1,19 @@
 # multiple-github-acc-local
 How to use multiple accounts on your local
 
-1. Generate ssh key
+### 1. Generate ssh key
 ```bash
 $ ssh-keygen -t rsa -C "your@email.com" -f "accOne"
 $ ssh-keygen -t rsa -C "your-sencond@email.com" -f "accTwo"
 ```
 
-2. Add both ssh keys into ssh agent.
+### 2. Add both ssh keys into ssh agent.
 ```bash
 $ ssh-add ~/.ssh/accOne
 $ ssh-add ~/.ssh/accTwo
 ```
 
-3. Create ssh configuration.
+### 3. Create ssh configuration.
 ```bash
 $ touch ~/.ssh/config
 ```
@@ -31,6 +31,13 @@ Host github.com-accTwo
 	IdentityFile ~/.ssh/accTwo
 ```
 note: Host github.com-accOne or github.com-accTwo is custom host aliases.
+
+### 4. Setting ssh public key into Github ssh key setting.
+Copy ssh public key command below.
+```
+$ cat ~/.ssh/accOne.pub
+$ cat ~/.ssh/accTwo.pub
+```
 
 ### Clone repo
 change the url repo.
