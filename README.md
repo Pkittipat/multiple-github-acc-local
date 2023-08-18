@@ -61,3 +61,11 @@ $ git add .
 $ git commit ...
 $ git push
 ```
+----
+### Using with GO private repo
+By default go use HTTPS when cloning a repository.
+Git can also be configured to use SSH in place of HTTPS for URLs matching a given prefix. For example, to use SSH for all GitHub access, add these lines to your ~/.gitconfig: [reference](https://go.dev/doc/faq#git_https)
+```
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+```
