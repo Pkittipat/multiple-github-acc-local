@@ -1,5 +1,5 @@
 # multiple-github-acc-local
-How to use multiple accounts on your local
+How to use multiple github accounts on your local
 
 ### 1. Generate ssh key
 ```bash
